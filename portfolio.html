@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon/favicon-32-32.png" type="image/x-icon">
+    <title>Damien Lebon CV et portfolio 2023</title>
+    <meta name="description" content="Développeur web et web mobile en formation chez Human Booster, à la recherche d'un stage de 4 mois à partir du 14 novembre 2023 jusqu'au 6 mars 2024 !">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fade-in">
+
+
+    <!--Transition .slide-in-->
+
+    <div class="slide-in bg-color" ></div>
+
+
+
+
+    <!--Panneau de control des couleurs-->
+    <div id="container-gear" class="container-gear bg-color" >
+        <img src="images/gear.png" alt="" onclick="toggleSlide()">
+        <div class="bg-color" id="panneau-controle-couleur">
+            <p>Couleur</p>
+            <div class="color-square" id="color-1"></div>
+            <div class="color-square" id="color-2"></div>
+            <div class="color-square" id="color-3"></div>
+            <div class="color-square" id="color-4"></div>
+            <div class="color-square" id="color-5"></div>
+            <div class="color-square" id="color-6"></div>
+        </div>
+    </div>
+
+    
+
+
+    <!--Navbar avec LOGO + Icone menu-->
+    <div class="navbar" >
+
+        <!--Logo-->
+
+        
+
+        <!--Icone "maison" menu hamburger-->
+        <button id="menu-toggle-btn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+
+    </div>
+
+    
+
+    <!--MENU-->  
+        
+    <nav id="menu">
+        <!-- Contenu du menu -->
+        <ul>
+            <li>
+                <a class="onglet" href="index.html" target="" >Accueil</a>
+                <p class="hover-text" id="home">ACCUEIL</p>
+            </li>
+            <li>
+                <a class="onglet" href="about.html" target="" >À propos</a>
+                <p class="hover-text" id="about" >À PROPOS</p>
+            </li>
+            <li>
+                <a class="onglet" href="blog.html" target="" >Expériences</a>
+                <p class="hover-text" id="blog" >EXPÉRIENCES</p>
+            </li>
+            <li>
+                <a class="onglet" href="portfolio.html" target="" >Portfolio</a>
+                <p class="hover-text" id="portfolio" >PORTFOLIO</p>
+            </li>
+            <li>
+                <a class="onglet" href="contact.html" target="" >Contact</a>
+                <p class="hover-text" id="contact" >CONTACT</p>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="portfolio">
+
+        <div class="header-page">
+            <h1><span class="color">Portfolio</span></h1>
+            <p><span class="color">Quelques projets </span>que j'ai pu réaliser seul ou en équipe...</p>
+        </div>
+
+
+        <div class="header-page">
+            <h1>HTML <span class="color">CSS</span> Javascript</h1>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/int-maquette-proclean-pressing.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Intégration de maquette :</span> ProClean PRESSING</h2>
+                <p>Dans le cadre du projet de fin d'année chez Human Booster, j'ai conçu un site web complet en utilisant les langages HTML, CSS, JavaScript et PHP. J'ai intégré une API pour obtenir des données dynamiques et j'ai utilisé des frameworks tels qu'Angular et Symfony pour optimiser le développement. <br><br> En plus de concevoir le front-end interactif, j'ai également développé le back-end et créé un back office convivial pour permettre aux futurs administrateurs du site de gérer facilement le contenu et les fonctionnalités.
+                </p>
+                   
+                <a href="https://damienl97r.github.io/BusinessCaseHBdamienlebon/index.html" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/int-maquette-find-fitness.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Intégration de maquette :</span> Find fitness</h2>
+                <p>Pendant ma formation chez Human Booster, j'ai eu l'opportunité de mettre en pratique mes connaissances en HTML et CSS en intégrant cette maquette. <br> <br> J'ai utilisé mes compétences acquises pour transformer le design statique d'une maquette en une interface web.
+                </p>
+                <br>
+                <h2><span class="color">Lien non fontionnel</span></h2>
+                   
+                <a href="#" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/int-maquette-ville-futuriste.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Intégration de maquette :</span> Ville futuriste</h2>
+                <p>Pendant ma formation chez Human Booster, j'ai eu l'opportunité de mettre en pratique mes connaissances en HTML et CSS en intégrant cette maquette. <br> <br> J'ai utilisé mes compétences acquises pour transformer le design statique d'une maquette en une interface web.
+                </p>
+                <br>
+                <h2><span class="color">Lien non fontionnel</span></h2>
+                   
+                <a href="#" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/int-maquette-photographe.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Intégration de maquette :</span> I'm a Photographer</h2>
+                <p>Lors de ma préqualification web à l'IFPA, j'ai eu l'opportunité de mettre en pratique mes connaissances en HTML et CSS en intégrant cette maquette. <br> <br> J'ai utilisé mes compétences acquises pour transformer le design statique d'une maquette en une interface web.
+                </p>
+                   
+                <a href="https://damienl97r.github.io/Challenge-html-css/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/cv-en-ligne.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Intégration de maquette :</span> CV en ligne</h2>
+                <p>Au cours de ma préqualification web à l'IFPA, j'ai eu l'occasion de mettre en pratique mes compétences en HTML, CSS et JavaScript en intégrant une maquette de CV en ligne. <br> <br> J'ai utilisé ces langages de programmation pour créer une interface interactive et responsive, en ajoutant des fonctionnalités avancées grâce à l'intégration des librairies JavaScript Scroll Reveal et Lightbox. Cette expérience m'a permis d'améliorer mes compétences en développement web et de créer une expérience utilisateur fluide et engageante pour le CV en ligne.
+                </p>
+                   
+                <a href="https://damienl97r.github.io/1erProjetStage/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/tuto-tacos-lyon.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Intégration de maquette :</span> Auto-formation</h2>
+                <p>Grâce à mon autonomie et à ma détermination, j'ai entrepris une auto-formation en HTML et CSS pendant ma préqualification web à l'IFPA. <br><br> Dans ce cadre, j'ai intégré avec succès, ma première maquette de site vitrine. Cette expérience m'a permis de démontrer ma capacité à travailler de manière indépendante et autonome et ainsi, à concrétiser mes objectifs dans le domaine du développement web.
+                </p>
+                   
+                <a href="http://test-my-first-web-site.000webhostapp.com/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/int-maquette-motor-expert.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Intégration de maquette :</span> Auto-formation</h2>
+                <p>Grâce à mon autonomie et à ma détermination, j'ai entrepris une auto-formation en HTML et CSS pendant ma préqualification web à l'IFPA. <br><br> Dans ce cadre, j'ai intégré avec succès, ma première maquette de site vitrine. Cette expérience m'a permis de démontrer ma capacité à travailler de manière indépendante et autonome et ainsi, à concrétiser mes objectifs dans le domaine du développement web.
+                </p>
+                   
+                <a href="http://test-my-first-web-site.000webhostapp.com/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="header-page">
+            <h1><span class="color">Fonctionnalités</span></h1>
+        </div>
+
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/feature-calculator.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Calculatrice : </span></h2>
+                <p>J'ai entrepris le développement d'une calculatrice interactive lors de ma pratique en HTML et CSS, mais surtout en JavaScript. <br><br> Grâce à mes compétences en programmation JavaScript, j'ai pu créer une calculatrice fonctionnelle qui permet aux utilisateurs d'effectuer des opérations mathématiques de manière pratique et intuitive.</p>
+                    
+                <a href="https://damienl97r.github.io/CalculatriceJS/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/feature-her-banner-slider.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Slider : Hero banner</span></h2>
+                <p>Pendant mes projets de développement web, j'ai eu l'occasion de créer un Slider de type hero-banner en utilisant HTML, CSS et JavaScript. J'ai utilisé ces langages pour concevoir et mettre en œuvre un Slider attrayant et dynamique qui met en valeur le contenu principal de la page d'accueil. <br><br>Grâce à cette expérience, j'ai amélioré mes compétences en intégration web et en programmation JavaScript, tout en créant une expérience visuelle captivante pour les utilisateurs.</p>
+                    
+                <a href="https://damienl97r.github.io/Hero-Banner-Slider/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/feature-img-gallery.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Galerie d'images</span></h2>
+                <p>Dans le cadre de mes projets de développement web, j'ai réalisé un exemple de galeries d'images en utilisant HTML, CSS et JavaScript. Pour améliorer l'expérience utilisateur, j'ai intégré la librairie JavaScript Lightbox, qui permet d'afficher les images de manière élégante et interactive. <br><br> Grâce à cette combinaison de technologies, j'ai pu créer des galeries d'images attrayantes et conviviales, offrant aux utilisateurs une expérience immersive lors de la visualisation des images.</p>
+                    
+                <a href="https://damienl97r.github.io/exemple-galerie-image/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/feature-search-bar.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Barre de recherche avec un tri nominatif</span></h2>
+                <p>Au cours de mes projets de développement web, j'ai créé un exemple de page boutique pour un site e-commerce fictif en utilisant HTML, CSS et JavaScript. J'ai utilisé ces langages pour concevoir une mise en page attrayante et réactive, permettant aux utilisateurs de naviguer facilement parmi les produits proposés. <br><br> En intégrant des fonctionnalités JavaScript, j'ai également ajouté des interactions dynamiques, telles que des filtres de recherche pour améliorer l'expérience d'achat des utilisateurs sur la page boutique.</p>
+                    
+                <a href="https://damienl97r.github.io/exemple-boutique-cartes-produits/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="header-page">
+            <h1><span class="color">Maquettes</span></h1>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/wireframe-business-case.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Conception de maquettes :</span> ProClean PRESSING</h2>
+                <p>Dans le cadre de mon projet de fin d'année chez Human Booster, j'ai réalisé la conception d'une maquette et son prototypage pour un site e-commerce axé sur la présentation d'une entreprise et la vente de services de pressing. Cette maquette met en valeur l'identité de l'entreprise et propose une interface conviviale permettant aux utilisateurs de découvrir les offres de pressing et d'effectuer des achats en ligne de manière simple et sécurisée. <br><br> Grâce à cette expérience, j'ai consolidé mes compétences en conception web et en intégration, tout en créant une interface attrayante pour promouvoir les services de pressing de l'entreprise.</p>
+                    
+                <a href="https://www.figma.com/file/JAQsmeW9Qbi8aFNnI7zS2L/Damien-Lebon-Maquette?type=design&t=Nlc0EYSURbApCKrB-0" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/int-maquette-find-fitness.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Conception de maquettes :</span> Find fitness</h2>
+                <p>Dans le cadre d'un exercice chez Human Booster, j'ai réalisé la conception d'une maquette pour un site web dédié à la présentation d'une salle de sport. Cette maquette met en valeur les installations, les équipements et les programmes d'entraînement offerts par la salle de sport, en utilisant des éléments visuels attractifs et une disposition ergonomique. <br><br> Grâce à cette expérience, j'ai développé mes compétences en conception d'interfaces utilisateur et en création d'une expérience en ligne immersive pour promouvoir les services de la salle de sport.</p>
+                    
+                <a href="https://www.figma.com/file/ByvB3COreGCX23cGDMXlEW/Exercice-maquette?type=design&t=zkLvRPn5P2EuseSY-0" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/wireframe-cocoon.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Conception de maquettes :</span> Cocoon APPART</h2>
+                <p>J'ai réalisé la conception d'une maquette pour un site e-commerce qui offre une double fonctionnalité : présenter l'entreprise et permettre aux utilisateurs de réserver des locations d'appartement. Cette maquette met en avant une interface conviviale et moderne, facilitant la navigation et offrant aux utilisateurs une expérience immersive pour découvrir l'entreprise et effectuer des réservations en ligne. <br><br> Grâce à cette conception, j'ai créé une expérience utilisateur engageante, favorisant à la fois la découverte de l'entreprise et la facilité d'accès aux services de location d'appartement.</p>
+                    
+                <a href="https://www.figma.com/file/9mMrlR1ljDeGAesEIWIDnU/Cocoon-Maquette?type=design&node-id=0-1&t=Ba1FXRRfuDJqsdHl-0" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/wireframe-secdron.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Conception de maquettes :</span> SECDRON</h2>
+                <p>Dans le cadre du projet collectif de fin d'année lors de ma préqualification web à l'IFPA, j'ai réalisé la conception d'une maquette pour un site e-commerce axé sur la présentation d'une entreprise spécialisée dans la vente de drones de sécurité pour des particuliers. Cette maquette met en avant les fonctionnalités et les avantages des drones proposés, tout en offrant aux utilisateurs une expérience d'achat fluide et sécurisée pour acquérir ces produits de haute technologie. <br><br> Grâce à cette expérience, j'ai renforcé mes compétences en conception d'interfaces utilisateur et en création de sites e-commerce captivants pour répondre aux besoins spécifiques du marché des drones de sécurité.</p>
+                    
+                <a href="https://www.figma.com/file/kXn7O0vw8eCtAExeF1frBE/SECDRON-Maquette?type=design&node-id=0-1&t=f8hSkLuGSuhH0iru-0" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="header-page">
+            <h1><span class="color">CMS</span></h1>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/wireframe-cocoon.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">WordPress :</span> Cocoon APPART</h2>
+                <p>En auto-formation, j'ai conçu un site web e-commerce sur WordPress permettant de présenter une entreprise spécialisée dans la location d'appartements. Ce site offre une interface conviviale où les utilisateurs peuvent découvrir les différents appartements disponibles, consulter les détails et effectuer des réservations en ligne de manière pratique et sécurisée. <br><br> Grâce à cette expérience d'auto-formation, j'ai acquis des compétences en conception et en développement sur WordPress, me permettant de créer un site web fonctionnel et attrayant pour faciliter le processus de location d'appartements pour les utilisateurs.</p>
+
+                <h2><span class="color">Lien non fontionnel</span></h2>
+
+                <a href="#" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/cms-connectus.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Webflow :</span> Connect Us</h2>
+                <p>Pendant ma préqualification web à l'IFPA, j'ai conçu un site web e-commerce sur Webflow permettant de présenter une entreprise spécialisée dans les produits connectés liés à la sécurité. Ce site offre une interface moderne et intuitive où les utilisateurs peuvent explorer une gamme de produits innovants, obtenir des informations détaillées et effectuer des achats en ligne de manière sécurisée. <br><br> Grâce à cette expérience d'auto-formation, j'ai développé des compétences en conception et en développement sur Webflow, me permettant de créer un site web dynamique et attractif pour promouvoir les produits connectés de l'entreprise et faciliter les transactions pour les utilisateurs.</p>
+
+                <a href="https://damiens-onepage-startup.webflow.io/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/cms-amongzus.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Google site :</span> AMONG Z US</h2>
+                <p>En auto-formation, j'ai conçu un site web type streaming sur Google Sites offrant aux utilisateurs la possibilité de visionner leurs épisodes de séries et mangas préférés. Ce site propose une interface conviviale où les utilisateurs peuvent accéder à une vaste bibliothèque de contenus, choisir leurs épisodes et les regarder en streaming de manière pratique et fluide. <br><br> Grâce à cette expérience, j'ai développé des compétences en conception et en gestion de contenu sur Google Sites, me permettant de créer un site web attrayant pour les amateurs de séries et mangas qui souhaitent profiter de leurs épisodes favoris en ligne.</p>
+
+                <a href="https://sites.google.com/view/among-z-us/accueil" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/cms-mfestival.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Google site :</span> M Festival</h2>
+                <p>Pendant ma préqualification web à l'IFPA, j'ai conçu un site web e-commerce pour une association spécialisée dans l'organisation de festivals de musique. Ce site offre aux utilisateurs la possibilité d'explorer les festivals à venir, d'acheter des billets en ligne et d'accéder à une boutique proposant des goodies exclusifs de l'association. <br><br> Grâce à cette expérience, j'ai pu mettre en pratique mes compétences en conception de sites web, en intégration d'une fonctionnalité e-commerce et en création d'une expérience utilisateur attrayante pour les passionnés de musique et les fans de festivals.</p>
+
+                <a href="https://sites.google.com/view/mfestivaldo/accueil" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="header-page">
+            <h1><span class="color">Jeux</span></h1>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/game-morpion.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Jeu du morpion</span></h2>
+                <p>Pendant ma préqualification web à l'IFPA, j'ai conçu un jeu du morpion entièrement en HTML, CSS et JavaScript. Ce jeu interactif permet aux utilisateurs de défier leurs amis ou de jouer contre l'ordinateur dans une interface conviviale et responsive. <br><br> Grâce à cette expérience, j'ai pu renforcer mes compétences en développement web et en programmation JavaScript tout en créant une expérience ludique et divertissante pour les amateurs de jeux de réflexion.
+                </p>
+
+                <a href="https://damienl97r.github.io/Jeu-du-morpion/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/game-pianonline.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Piano :</span> Pian'On line</h2>
+                <p>Pendant ma préqualification web à l'IFPA, j'ai développé un piano en ligne utilisant les langages HTML, CSS et JavaScript. Cependant, cette application est optimisée pour une utilisation sur PC, car elle est conçue pour être jouée à l'aide des touches du clavier de l'ordinateur. <br><br> Ce piano interactif offre une expérience réaliste en reproduisant les notes et les octaves, offrant ainsi aux utilisateurs la possibilité de jouer de la musique directement depuis leur navigateur.
+                </p>
+
+                <a href="https://damienl97r.github.io/Piano-js/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-projet" >
+            <div class="projet-image" >
+               <img src="images/non-modifie/game-pokedex.png" alt="portfolio-first">
+            </div>
+            <div class="projet-text" >
+                <h2><span class="color">Pokédex</span></h2>
+                <p>Pendant ma préqualification web à l'IFPA, j'ai créé un Pokédex en ligne en utilisant les langages HTML, CSS et JavaScript, et j'ai intégré une API pour obtenir les données des différents Pokémon. <br><br> Cette application interactive permet aux utilisateurs d'explorer et de rechercher des informations détaillées sur chaque Pokémon, telles que leurs caractéristiques, leurs capacités et leurs évolutions, offrant ainsi une expérience complète pour les fans de l'univers Pokémon.
+                </p>
+
+                <a href="https://damienl97r.github.io/Pok-dex-API/" target="_blank">
+                    <button class="btnPortfolio bg-color-hov">Voir le projet</button>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--Lien vers document fade-in.js-->
+    <script src="js/fade-in.js"></script> 
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon/favicon-32-32.png" type="image/x-icon">
+    <title>Damien Lebon CV et portfolio 2023</title>
+    <meta name="description" content="Développeur web et web mobile en formation chez Human Booster, à la recherche d'un stage de 4 mois à partir du 14 novembre 2023 jusqu'au 6 mars 2024 !">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fade-in">
+
+
+    <!--Transition .slide-in-->
+
+    <div class="slide-in bg-color" ></div>
+
+
+
+    <!--Panneau de control des couleurs-->
+    <div id="container-gear" class="container-gear bg-color" >
+        <img src="images/gear.png" alt="" onclick="toggleSlide()">
+        <div class="bg-color" id="panneau-controle-couleur">
+            <p>Couleur</p>
+            <div class="color-square" id="color-1"></div>
+            <div class="color-square" id="color-2"></div>
+            <div class="color-square" id="color-3"></div>
+            <div class="color-square" id="color-4"></div>
+            <div class="color-square" id="color-5"></div>
+            <div class="color-square" id="color-6"></div>
+        </div>
+    </div>
+
+
+
+    <!--Navbar avec LOGO + Icone menu-->
+    <div class="navbar" >
+
+        <!--Logo-->
+
+        
+
+        <!--Icone "maison" menu hamburger-->
+        <button id="menu-toggle-btn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+
+    </div>
+
+    
+
+    <!--MENU-->  
+        
+    <nav id="menu">
+        <!-- Contenu du menu -->
+        <ul>
+            <li>
+                <a class="onglet" href="index.html" target="" >Accueil</a>
+                <p class="hover-text" id="home">ACCUEIL</p>
+            </li>
+            <li>
+                <a class="onglet" href="about.html" target="" >À propos</a>
+                <p class="hover-text" id="about" >À PROPOS</p>
+            </li>
+            <li>
+                <a class="onglet" href="blog.html" target="" >Expériences</a>
+                <p class="hover-text" id="blog" >EXPÉRIENCES</p>
+            </li>
+            <li>
+                <a class="onglet" href="portfolio.html" target="" >Portfolio</a>
+                <p class="hover-text" id="portfolio" >PORTFOLIO</p>
+            </li>
+            <li>
+                <a class="onglet" href="contact.html" target="" >Contact</a>
+                <p class="hover-text" id="contact" >CONTACT</p>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Blog-->
+
+    <div class="blog">
+
+        <div class="header-page">
+            <h1><span class="color">Expériences</span></h1>
+            <p><span class="color">Mes </span>expériences, mon parcours.</p>
+        </div> 
+
+        <div class="container-article">
+
+
+            <div class="blogs">
+                
+                <div class="img">
+                    <img src="images/post-one.jpg" alt="blog-one">
+                   <div class="blog-date bg-color"><p>04/23 - aujourd'hui</p></div>
+                </div>
+                <div class="blog-text">
+                    <h3>Formation : Human Booster, Lyon (69)</h3>
+                    <p>Au cours de cette formation pour le titre professionnel de développeur web et web mobile, j'acquerrai différentes compétences à savoir :</p>
+                    <br>
+                    <p>- Développement <span class="color">front-end</span> sécurisé.</p>
+                    <p>- Développement <span class="color">back-end</span>  sécurisé.</p>
+                    <p>- <span class="color">Compétences transverses :</span> Green IT, cybersécurité, collaboration en équipe, gestion de projet Agile, versionning, culture numérique, algorithmique, Linux, déploiement serveur, anglais professionnel et informatique.</p>
+                    <p>- <span class="color">Compléments techniques :</span> enjeux environnementaux, cybersécurité, anglais, business case.</p>
+                    <p><span class="color">- Stage en entreprise (560 h).</span></p>
+                </div>
+            </div>   
+            
+            
+            <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-two.jpg" alt="blog-two">
+                   <div class="blog-date bg-color"><p>01/2023</p></div>
+               </div>
+               <div class="blog-text">
+                   <h3>Stage : Proweb Consulting</h3>
+                   <p>Pendant cette expérience de stage aussi bien captivante qu'enrichissante, j'ai eu l'opportunité de plonger dans le monde de l'analyse et de l'intégration de deux maquettes de sites web. <span class="color">En utilisant mes compétences</span> en HTML, CSS et JavaScript, j'ai pu créer des versions web remarquables de ces maquettes.</p>
+                   <br>
+                   <p> Mais ce n'est pas tout ! J'ai également pris le temps de documenter méticuleusement ma <span class="color">méthode de développement</span> dans un document Word, offrant ainsi une vision claire et détaillée de mon travail.</p>
+               </div>
+           </div>
+
+
+           <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-three.jpg" alt="blog-three">
+                   <div class="blog-date bg-color"><p>10/22 - 02/23</p></div>
+               </div>
+               <div class="blog-text">
+                   <h3>Formation : IFPA, Miribel (01)</h3>
+
+                   <p>Au cours d'une formation de préqualification web, j'ai acquis un ensemble de compétences polyvalentes.</p>
+                    <br>
+                    <p><span class="color">Compétences clés :</span>  HTML, CSS, JavaScript, PHP, CMS (WordPress, Webflow, Wix, Google Sites), algorithmie, gestion de projet (Trello, Notion, Google Workspace), création de visuels (Figma, Canva), méthode AGILE, développement complet de projets web.</p>
+                    <br>
+                    <p>Avec mon expertise et mon expérience, je suis prêt à relever de nouveaux défis et à ajouter de la valeur à tout projet web auquel je contribue.</p>
+               </div>
+           </div>
+
+
+           <div class="blogs">
+               
+               <div class="img">
+                   <img src="images/post-four.jpg" alt="blog-four">
+                   <div class="blog-date bg-color"><p>2020 - 2022</p></div>
+               </div>
+               <div class="blog-text">
+                   <h3>Diététicien CDI : Montluel (01)</h3>
+
+                   <p>Pendant deux ans en tant que diététicien dans un Ehpad, j'ai acquis des compétences solides, notamment :</p>
+
+                   <br>
+
+                   <p>- Diagnostic diététique personnalisé pour les résidents en fonction de leurs pathologies.</p>
+                   <p>- Conception et gestion de menus adaptés pour une collectivité de 110 résidents.</p>
+                   <p>- Collaboration étroite avec les services soignants pour optimiser les prises en charge des patients.</p>
+                   <br>
+                   <p>J'ai aussi développé des qualités essentielles telles que <span class="color">l'autonomie, le sens de l'écoute, l'esprit d'analyse et la force de propositions.</span> </p>
+               </div>
+           </div> 
+
+           <div class="blogs">
+               
+            <div class="img">
+                <img src="images/post-four.jpg" alt="blog-four">
+                <div class="blog-date bg-color"><p>04/23 - actuel</p></div>
+            </div>
+            <div class="blog-text">
+                <h3>DUT Génie Biologique option diététique à l'IUT Lyon 1 - Doua (Villeurbanne)</h3>
+                <p>Titulaire d'un DUT Génie Biologique option diététique, j'ai acquis des compétences pratiques et théoriques essentielles. Avec une formation solide en sciences biologiques et en nutrition, je suis capable d'établir des diagnostics diététiques précis, de concevoir des menus adaptés et de collaborer efficacement avec les équipes soignantes.</p>
+                <br>
+                <p>Mon bagage comprend également des qualités telles que <span class="color">l'autonomie, l'écoute active, l'esprit analytique et la capacité à proposer des solutions innovantes.</span></p>
+            </div>
+        </div> 
+        </div>
+
+    </div>
+    
+
+    <!--Lien vers document fade-in.js-->
+    <script src="js/fade-in.js"></script> 
+    
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

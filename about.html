@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon/favicon-32-32.png" type="image/x-icon">
+    <title>Damien Lebon CV et portfolio 2023</title>
+    <meta name="description" content="Développeur web et web mobile en formation chez Human Booster, à la recherche d'un stage de 4 mois à partir du 14 novembre 2023 jusqu'au 6 mars 2024 !">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body class="fade-in">
+
+
+    <!--Transition .slide-in-->
+
+    <div class="slide-in bg-color" ></div>
+
+
+
+    <!--Panneau de control des couleurs-->
+    <div id="container-gear" class="container-gear bg-color" >
+        <img src="images/gear.png" alt="" onclick="toggleSlide()">
+        <div class="bg-color" id="panneau-controle-couleur">
+            <p>Couleur</p>
+            <div class="color-square" id="color-1"></div>
+            <div class="color-square" id="color-2"></div>
+            <div class="color-square" id="color-3"></div>
+            <div class="color-square" id="color-4"></div>
+            <div class="color-square" id="color-5"></div>
+            <div class="color-square" id="color-6"></div>
+        </div>
+    </div> 
+
+    <!--Navbar avec LOGO + Icone menu-->
+    <div class="navbar" >
+
+        <!--Logo-->
+
+        
+
+        <!--Icone menu hamburger-->
+        <button id="menu-toggle-btn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+
+    </div>
+
+    
+
+    <!--MENU-->  
+        
+    <nav id="menu">
+        <!-- Contenu du menu -->
+        <ul>
+            <li>
+                <a class="onglet" href="index.html" target="" >Accueil</a>
+                <p class="hover-text" id="home">ACCUEIL</p>
+            </li>
+            <li>
+                <a class="onglet" href="about.html" target="" >À propos</a>
+                <p class="hover-text" id="about" >À PROPOS</p>
+            </li>
+            <li>
+                <a class="onglet" href="blog.html" target="" >Expériences</a>
+                <p class="hover-text" id="blog" >EXPÉRIENCES</p>
+            </li>
+            <li>
+                <a class="onglet" href="portfolio.html" target="" >Portfolio</a>
+                <p class="hover-text" id="portfolio" >PORTFOLIO</p>
+            </li>
+            <li>
+                <a class="onglet" href="contact.html" target="" >Contact</a>
+                <p class="hover-text" id="contact" >CONTACT</p>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--A propos-->
+    <div class="aPropos">
+
+        <div class="header-page">
+        <h1>À propos de <span class="color">moi</span></h1>
+        <p><span class="color">Qui-</span>suis-je?</p>
+        </div>  
+
+        <div class="container-aPropos">
+
+            <div class="gauche-aPropos">
+                <h3>Damien Lebon, 23 ans <span class="color">développeur web et web mobile</span> à Lyon, France</h3>
+
+                <p>En reconversion professionnel depuis un an, j'exerçais le métier de diététicien et j'ai ensuite décidé de me tourner vers les métiers du web.</p>
+
+                <p>C'est alors que j'ai fait une préqualification web à l'IFPA, à Miribel dans l'Ain (01). Où j'ai pu commencer à apprendre certains langages comme <span class="color">HTML, CSS, Javascript, PHP</span>. J'ai pu intégrer différents principes et savoirs faire comme l' <span class="color">Algorithmie,</span> méthode de travail en environnement <span class="color">AGILE (scrum),</span> la gestion de projet avec les outils suivants : <span class="color">Trello, Notion, Google Workspace</span>...</p>
+
+                <p>Actuellement en formation chez Human Booster Villeurbanne (Lyon) pour le <span class="color">titre professionnel de développeur web et web mobile</span>. Je suis à la recherche d'un <span class="color">stage de 4 mois à partir du 14 novembre 2023</span>, idéalement à Lyon et ses alentours, dans le secteur du développement web.</p>
+
+                <a href="cv-pdf/DamienLebon-cv2023.pdf" download="">
+                    <button class="bg-color-hov">Télécharger mon CV</button>
+                </a>
+                
+            </div>
+
+            
+            <div class="droite-aPropos">
+                <img src="images/about.jpg" alt="Your Image">
+            </div>
+        </div>
+
+        <!--Mes services-->
+
+        <div class="header-page">
+            <h1>Mes <span class="color">Hard Skills</span></h1>
+        </div> 
+
+        <div class="containerCard-service">
+
+            <div class="card-service bg-color-hov">
+                <div class="service-img">
+                    <img class="bg-color" src="images/coding.png" alt="service-one">
+                    <h2>Langages</h2>
+                </div>
+                <div class="service-description">
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/html-5.png" alt="">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/css-3.png" alt="">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/js.png" alt="">
+                        <p>Javascript</p>
+                    </div>
+                    
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/php.png" alt="">
+                        <p>PHP</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-service bg-color-hov">
+                <div class="service-img">
+                    <img class="bg-color" src="images/iconCompetences/boite-a-outils.png" alt="service-three">
+                    <h2>Framework</h2>
+                 </div>
+                 <div class="service-description">
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/icons8-bootstrap-48.png" alt="">
+                        <p>Bootstrap</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/icons8-symfony-48.png" alt="">
+                        <p>Symfony</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/icons8-angularjs-48.png" alt="">
+                        <p>Angular</p>
+                    </div>
+                     
+                 </div>
+            </div>
+
+            <div class="card-service bg-color-hov">
+                <div class="service-img">
+                    <img class="bg-color" src="images/iconCompetences/tableau-de-palette-de-peinture-avec-pinceau.png" alt="service-two">
+                    <h2>Graphisme/Maquette</h2>
+                </div>
+                <div class="service-description">
+                     
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/figma.png" alt="">
+                        <p>Figma</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/icons8-canva-48.png" alt="">
+                        <p>Canva</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-service bg-color-hov">
+                <div class="service-img">
+                    <img class="bg-color" src="images/iconCompetences/cms.png" alt="service-three">
+                    <h2>CMS</h2>
+                 </div>
+                 <div class="service-description">
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/icons8-wordpress-50.png" alt="">
+                        <p>WordPress</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/icons8-webflow-50.png" alt="">
+                        <p>Webflow</p>
+                    </div>
+                     
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/wix.png" alt="">
+                        <p>Wix</p>
+                    </div>
+
+                 </div>
+            </div>
+
+            <div class="card-service bg-color-hov">
+                <div class="service-img">
+                    <img class="bg-color" src="images/iconCompetences/planete-terre.png" alt="service-three">
+                    <h2>Environnement de développement</h2>
+                 </div>
+                 <div class="service-description">
+                     
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/icons8-visual-studio-code-2019-48.png" alt="">
+                        <p>Visual Studio Code</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/git.png" alt="">
+                        <p>Git Bash</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/github.png" alt="">
+                        <p>GitHub</p>
+                    </div>
+
+                    <div class="service-description-content">
+                        <img src="images/iconCompetences/google.png" alt="">
+                        <p>Google Workspace</p>
+                    </div>
+                 </div>
+            </div>
+
+            
+        </div>
+        
+        <!--Compétences-->
+        
+        <div class="header-page">
+            <h1>Mes <span class="color">Soft Skills</span></h1>
+        </div> 
+
+        <div class="container-competences">
+
+            <h2 class="bg-color-hov">Autome</h2>
+
+            <h2 class="bg-color-hov">Curieux</h2>
+
+            <h2 class="bg-color-hov">Positif</h2>
+
+            <h2 class="bg-color-hov">Motivé</h2>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--Lien vers document fade-in.js-->
+    <script src="js/fade-in.js"></script> 
+    
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
