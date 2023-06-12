@@ -833,7 +833,7 @@ form > button {
 
 
 .card-contact {
-  background-image: url(/images/contact-back.jpg);
+  background-image: url(../images/contact-back.jpg);
   background-size: cover;
   display: flex;
   justify-content: space-around;
