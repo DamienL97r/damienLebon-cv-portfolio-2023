@@ -515,6 +515,10 @@ nav {
   padding-right: 2rem;
 }
 
+.gauche-aPropos > a {
+  text-decoration: none;
+}
+
 .gauche-aPropos > a > button {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -527,6 +531,14 @@ nav {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gauche-aPropos > a > button > img {
+  height: 15px;
+  padding-right: 10px;
 }
 
 
