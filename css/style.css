@@ -192,7 +192,7 @@ body {
 }
 
 #menu {
-  position: absolute;
+  position: fixed;
   top: -100%;
   left: 0;
   transition: top 1s ease-in-out;
