@@ -44,7 +44,10 @@ function toggleSlide(){
   /*Panneau de control des couleurs */
 
   const colorSquares = document.querySelectorAll('.color-square');
-  let color = localStorage.getItem('selectedColor') || "#c70039";
+
+  /*Couleur par defaut */
+  let color = localStorage.getItem('selectedColor') || "#dd7631";
+
   document.querySelectorAll('.color').forEach(el => {
       el.style.color = color;
   });
