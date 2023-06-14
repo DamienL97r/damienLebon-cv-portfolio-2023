@@ -41,51 +41,56 @@ function toggleSlide(){
 }
 
 
-  /*Panneau de control des couleurs */
+/* Panneau de contrôle des couleurs */
 
-  const colorSquares = document.querySelectorAll('.color-square');
+const colorSquares = document.querySelectorAll('.color-square');
 
-  /*Couleur par defaut */
-  let color = localStorage.getItem('selectedColor') || "#dd7631";
+/* Couleur par défaut */
+const defaultColor = "#dd7631";
+let color = sessionStorage.getItem('selectedColor') || defaultColor;
 
-  document.querySelectorAll('.color').forEach(el => {
+document.querySelectorAll('.color').forEach(el => {
+  el.style.color = color;
+});
+document.querySelectorAll('.bg-color').forEach(el => {
+  el.style.backgroundColor = color;
+});
+
+colorSquares.forEach(square => {
+  square.addEventListener('click', function() {
+    switch (this.id) {
+      case 'color-1':
+        color = "#c70039";
+        break;
+      case 'color-2':
+        color = "#481380";
+        break;
+      case 'color-3':
+        color = "#04A777";
+        break;
+      case 'color-4':
+        color = "#035aa6";
+        break;
+      case 'color-5':
+        color = "#00909e";
+        break;
+      case 'color-6':
+        color = defaultColor;
+        break;
+    }
+    sessionStorage.setItem('selectedColor', color);
+    document.querySelectorAll('.color').forEach(el => {
       el.style.color = color;
-  });
-  document.querySelectorAll('.bg-color').forEach(el => {
+    });
+    document.querySelectorAll('.bg-color').forEach(el => {
       el.style.backgroundColor = color;
+    });
   });
-  
-  colorSquares.forEach(square => {
-      square.addEventListener('click', function() {
-          switch (this.id) {
-              case 'color-1':
-                  color = "#c70039";
-                  break;
-              case 'color-2':
-                  color = "#481380";
-                  break;
-              case 'color-3':
-                  color = "#04A777";
-                  break;
-              case 'color-4':
-                  color = "#035aa6";
-                  break;
-              case 'color-5':
-                  color = "#00909e";
-                  break;
-              case 'color-6':
-                  color = "#dd7631";
-                  break;
-          }
-          localStorage.setItem('selectedColor', color);
-          document.querySelectorAll('.color').forEach(el => {
-              el.style.color = color;
-          });
-          document.querySelectorAll('.bg-color').forEach(el => {
-              el.style.backgroundColor = color;
-          });
-      });
-  });
+});
+
+
+
+
 
 
   /*Pour gérer la couleur de l'icone du menu hamburger*/
