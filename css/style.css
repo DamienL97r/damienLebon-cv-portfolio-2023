@@ -1291,6 +1291,10 @@ form > button {
     display: none;
   }
 
+  .header-page > p {
+    padding: 0 15px;
+  }
+
   .container-contact > .formulaire > h3 {
     margin-top: 20px;
   }
