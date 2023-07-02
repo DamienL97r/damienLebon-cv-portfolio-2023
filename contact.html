@@ -101,31 +101,31 @@
 
                 <p>Les champs avec <span class="color">(*)</span> sont obligatoires.</p>
 
-                <form action="https://formspree.io/f/mayzgrjq" method="POST">
+                <form id="form" action="https://formspree.io/f/mayzgrjq" method="POST">
 
                     <label for="lastname">
                         <p>Nom :<span class="color">*</span></p>
-                        <input id="lastname" type="text" name="lastname" placeholder="Nom" required>
+                        <input class="form-input" id="lastname" type="text" name="lastname" placeholder="Nom" required>
                     </label>
 
                     <label for="name">
                         <p>Prénom :<span class="color">*</span></p>
-                        <input id="name" type="text" name="name" placeholder="Prénom" required>
+                        <input class="form-input" id="name" type="text" name="name" placeholder="Prénom" required>
                     </label>
 
                     <label for="email">
                         <p>E-mail :<span class="color">*</span></p>
-                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <input class="form-input" id="email" type="email" name="email" placeholder="E-mail" required>
                     </label>
 
                     <label for="subject">
                         <p>Objet :</p>
-                        <input id="subject" type="text" name="subject" placeholder="Objet">
+                        <input class="form-input" id="subject" type="text" name="subject" placeholder="Objet">
                     </label>
 
                     <label for="message">
                         <p>Message :<span class="color">*</span></p>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message ici..." required></textarea>
+                        <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message ici..." required></textarea>
                     </label>
 
                     <button class="bg-color-hov" type="submit">Envoyer</button>
@@ -192,11 +192,13 @@
     
         </div>
 
+    
 
     <!--Lien vers document fade-in.js-->
     <script src="js/fade-in.js"></script>     
 
     <script src="js/main.js"></script>
-    
+    <script src="js/form.js"></script>
+
 </body>
 </html>
