@@ -634,9 +634,26 @@ nav {
 
 .service-img {
   margin: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.service-img > img {
+.service-img > h2 {
+  font-size: 1.4rem;
+}
+
+.service-img > .icon-arrow {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  width:  35px;
+  height: 35px;
+  bottom: -45px;
+}
+
+.service-img > .icon-service {
   margin-bottom: 20px;
   box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.322);
   border-radius: 30px;
@@ -655,6 +672,10 @@ nav {
 
 .card-service:hover > .service-description {
   opacity: 1;
+}
+
+.card-service:hover > .service-img > .icon-arrow {
+  opacity: 0;
 }
 
 .service-description-content {
